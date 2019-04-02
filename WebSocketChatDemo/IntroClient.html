@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <script>
+         ws = new WebSocket("ws://localhost:9090");
+
+         ws.onopen = function (e) {
+                document.getElementById("statusDiv").innerText="Connection Opended";
+                sendMessage()
+            }
+
+            // Listen for the close connection event
+            ws.onclose = function (e) {
+                document.getElementById("statusDiv").innerText="Connection closed";
+            }
+
+            // Listen for connection errors
+            ws.onerror = function (e) {
+                document.getElementById("statusDiv").innerText="Connection Error";
+            }
+
+            // Listen for new messages arriving at the client
+            ws.onmessage = function (e) {
+                document.getElementById("statusDiv").innerText="Message Received";
+                document.getElementById("outputDiv").innerText=e.data;
+                // Close the socket once one message has arrived.      
+                //ws.close();
+            }
+
+        function sendMessage() {
+            var msg = document.forms[0].elements[0].value;
+            alert(msg + "Sending")
+            ws.send(msg)
+           
+
+            // Listen for the connection open event then call the sendMessage function          
+            
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <input>
+        <input type='button' value="SEND" onclick="sendMessage()">
+    </form>
+    <div id="statusDiv"></div>
+    <div id="outputDiv"></div>
+</body>
+
+</html>

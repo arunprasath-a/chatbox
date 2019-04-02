@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 1cm;
+        }
+
+        #statusDiv {
+            height: 1cm;
+            width: 50%;
+            background-color: greenyellow;
+            padding: 3mm;
+            color: black;
+            margin: 5mm;
+
+        }
+        #resultDiv {
+            height: 5cm;
+            width: 50%;
+            background-color: khaki;
+            padding: 3m;
+            color: white;
+            margin: 5mm;
+        }
+        form{
+            padding: 3m;
+            margin: 5mm;
+        }
+        input[type='text']{
+            width: 14cm;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="statusDiv">
+        STATUS : 
+    </div>
+    <form>
+        <label>URL</label>
+        <input type='text' id="urlInput">
+        <button type='button'>Connect</button>
+        <button type='button'>Disconnect</button>
+    </form>
+
+    <form>
+            <label>Message</label>
+            <input type='text' id="messageText">
+            <button type='button'>SEND</button>
+    </form>
+    <div id="resultDiv">
+
+    </div>
+</body>
+
+</html>

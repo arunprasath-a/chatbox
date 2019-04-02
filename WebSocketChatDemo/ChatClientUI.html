@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <script src="page.js"></script>
+    <link href="page.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+<div id="nickNamePanel">
+    <form>
+        <label>Nick Name</label>
+        <input>
+        <button>Enter Chat</button>
+    </form>
+</div>
+
+<div id="chatPanel">
+    <table style="width:100%">
+        <tr id="firstRow">
+            <td><textarea style="height:10cm; width:100%; border:solid"></textarea></td>
+            <td style="width:4cm; height:10cm; border:solid">
+            <select multiple>
+                <option>User1</option>
+                <option>User2</option>
+            </select>
+            </td>
+        </tr>
+        <tr id="secondRow">
+            <td colspan="2">
+                <label id="nickLabel">nickname</label>
+                <input type='text' >
+                <button type='button'>SEND</button>
+            </td>
+        </tr>
+    </table>
+
+</div>
+</body>
+
+</html>

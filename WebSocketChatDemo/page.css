@@ -1,0 +1,42 @@
+body{
+    margin: 1cm;
+}
+#firstRow{
+    border: solid;
+    width: 20cm;
+    height: 10cm;
+}
+#chatPanel{
+    border: solid;
+    height:12cm;
+}
+
+#nickNamePanel{
+    border: solid;
+    padding: 5mm;
+    width: 10cm;
+    height: 2cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-small;
+    /*visibility: hidden;*/
+}
+#nickLabel{
+    width: 8cm;
+}
+input[type='text']{
+    border-radius: 2mm;
+    height: 1cm;
+    background-color: azure;
+    padding-left: 3mm;
+    width: 20cm;
+}
+button{
+    font-size: x-small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 8mm;
+    border-radius: 2mm;
+}
+select{
+    width: inherit;
+    height: 5cm;
+}
